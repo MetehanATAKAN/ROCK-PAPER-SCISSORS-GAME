@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: Barlow Semi Condensed,sans-serif;
+  background:radial-gradient(circle, #1f3756,#141539);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Header {
+  border: solid 3px rgba(255, 255, 255, 0.384);
+  border-radius: 20px;
+  max-width: 43.75rem;
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-between;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.2rem;
+  font-size: 2.5rem;
+}
+.buttons {
+  width: 100%;
+  max-width: 35rem;
+  margin: 50px auto;  
+}
+.top-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#rock-button {
+  padding-top: 25px;
+  margin:auto;
+  width: 150px;
+  height: 150px;
+  border: 20px solid rgb(173, 11, 11);
+  border-radius: 150px;
+  background-color: white;
+  text-align: center;
+  transition: width 0.3s ,height 0.3s;
+}
+#scıssors-button {
+  border: 20px solid rgb(22, 93, 226);
+  transition: width 0.3s ,height 0.3s;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+#paper-button {
+  border: 20px solid rgb(226, 178, 22);
+  transition: width 0.3s ,height 0.3s;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+#rock-button:hover {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 5px 5px 5px rgb(196, 43, 56);
+}
+#paper-button:hover {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 5px 5px 5px rgb(255, 217, 0);
+}
+#scıssors-button:hover {
+  width: 180px;
+  height: 180px;
+  box-shadow: 0 5px 5px 5px rgb(0, 153, 255);
+}
+#rock-button2 {
+  padding-top: 25px;
+  margin:auto;
+  width: 250px;
+  height: 250px;
+  border: 30px solid rgb(173, 11, 11);
+  border-radius: 250px;
+  background-color: white;
+  text-align: center;
+  
+}
+#scıssors-button2 {
+  border: 30px solid rgb(22, 93, 226);  
+  width: 250px;
+  height: 250px;
+  border-radius: 150px;
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+#paper-button2 {
+  border: 30px solid rgb(226, 178, 22);
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  background-color: white;
+  text-align: center;
+  padding-top: 25px;
+}
+#computer-button {
+  background-color: rgb(0,0,0,0.3);
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  text-align: center;
+  padding-top: 50px;
+}
+.counter {
+  font-size: 125px;
+}
+.buttons-main {
+  text-align: center;
+}
+.game-buttons{
+  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 50rem;
+  margin: 50px auto;
+  justify-content: space-between; 
+}
+.game-buttons2{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 43.75rem;
+  margin: 50px auto;
+  justify-content: space-between; 
+}
+.game-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.game-output span{
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+.game-output a {
+  text-align: center;
+}
+.game-output a button{ 
+  max-width: 25rem;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 12.5rem;
+  border: none;
+}
+.game-result {
+  margin: auto;
+}
+.score{
+  border: 2px solid white;
+  width: 100%;
+  max-width: 8rem;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: white;
+  color: rgb(31, 29, 29);
+}
+.score div {
+  padding-top: 5px;
+  font-size: 50px;
+}
+.score H3 {
+  padding-top: 10px;
+}
+.button-text {
+  padding-bottom: 10px;
 }
